@@ -24,6 +24,12 @@ const router = new VueRouter({
     routes
 });
 
+const __svg__ = {
+    path: './assets/svg/*.svg',
+    name: 'assets/svg/p-svg.svg'
+}
+require('webpack-svgstore-plugin/src/helpers/svgxhr')(__svg__);
+
 new Vue({
     router,
     store

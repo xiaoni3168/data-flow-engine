@@ -10,7 +10,7 @@
                 <svg class="element-icon">
                     <use :xlink:href="element.icon"></use>
                 </svg>
-                <span class="element-label">test</span>
+                <span class="element-label">{{element.name}}</span>
                 <div class="element-cover"></div>
             </div>
         </div>
@@ -29,9 +29,15 @@ export default {
             filterElements: [
                 {
                     id: 0,
-                    type: 0,
-                    name: 'test',
+                    type: 'dataset',
+                    name: 'Output',
                     maxInput: 1
+                },
+                {
+                    id: 1,
+                    type: 'join',
+                    name: 'Input',
+                    maxInput: 2
                 }
             ],
 
@@ -241,7 +247,7 @@ export default {
                     fill: #666666;
                 }
                 .element-label {
-                    color: #666666;
+                    color: #ffffff;
                 }
             }
             .element-icon {
@@ -249,10 +255,11 @@ export default {
                 width: 20px;
                 fill: #666666;
                 margin: 0 6px 0 14px;
+                position: relative;
             }
             .element-label {
                 font-size: 13px;
-                color: #666666;
+                color: #cccccc;
             }
             .element-cover {
                 position: absolute;

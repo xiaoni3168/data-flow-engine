@@ -19,6 +19,9 @@ export default {
                 'width': '100%'
             }
         });
+        this.D3Diagram.on('line_click', function ({data, event}) {
+            this.deleteLine(data);
+        });
     },
     components: {
         Tool

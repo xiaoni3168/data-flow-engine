@@ -323,7 +323,7 @@ export default class D3Diagram {
             .select(this.dom)
             .append('div')
             .classed('etl-empty', true)
-            .text('Start your ETL now...');
+            .text('Start your Data-flow now...');
     }
 
     /**

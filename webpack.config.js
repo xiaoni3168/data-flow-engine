@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const SvgStore = require('webpack-svgstore-plugin');
 
 module.exports = {
     entry: {
@@ -54,6 +55,15 @@ module.exports = {
         }
     },
     plugins: [
+        new SvgStore({
+            // svgo options
+            svgoOptions: {
+                plugins: [
+                    { removeTitle: true }
+                ]
+            },
+            prefix: ''
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             chunks: ['index'],

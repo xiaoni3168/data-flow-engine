@@ -37,6 +37,7 @@
     "vue-loader": "^14.1.1",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.13",
-    "webpack": "2.2.0"
+    "webpack": "2.2.0",
+    "webpack-svgstore-plugin": "^4.0.1"
   }
 }

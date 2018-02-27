@@ -65,7 +65,7 @@ export function line (configs = []) {
                 .attr('fill', '#cccccc')
                 .attr('height', 18)
                 .attr('width', 18)
-                .attr('xlink:href', '#icon-etl-delete')
+                .attr('xlink:href', '#icon-delete')
                 .style('display', 'none')
                 .style('cursor', 'pointer')
                 .on('mouseover', function () {

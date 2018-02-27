@@ -300,7 +300,7 @@ function drawHook (d) {
         .attr('y', d.y - UI.CLOSE.RELA_TOP)
         .attr('height', UI.CLOSE.HEIGHT)
         .attr('width', UI.CLOSE.WIDTH)
-        .attr('xlink:href', '#icon-etl-delete')
+        .attr('xlink:href', '#icon-delete')
         .classed('icon-close', true)
         .style('display', 'none')
         .on('click', function () {
