@@ -13,6 +13,12 @@
                 <span class="element-label">{{element.name}}</span>
                 <div class="element-cover"></div>
             </div>
+            <div class="link-to-github">
+                <svg>
+                    <use xlink:href="#github"></use>
+                </svg>
+                <a href="https://github.com/xiaoni3168/data-flow-engine">View Project on GitHub</a>
+            </div>
         </div>
     </div>
 </template>
@@ -230,6 +236,7 @@ export default {
     &__elements {
         height: calc(100% - 46px);
         text-align: center;
+        position: relative;
         
         &-element {
             height: 48px;
@@ -295,6 +302,39 @@ export default {
     .element-label {
         font-size: 13px;
         color: #FFFFFF;
+    }
+}
+
+.link-to-github {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin: 0 5%;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #2888e5;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(40, 136, 229, .1);
+        a {
+            opacity: .7;
+        }
+    }
+
+    svg {
+        background: transparent;
+        position: initial;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-top;
+    }
+
+    a {
+        text-decoration: none;
+        color: #2888e5;
     }
 }
 </style>
