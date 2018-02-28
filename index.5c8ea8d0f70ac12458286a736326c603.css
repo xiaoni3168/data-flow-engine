@@ -285,6 +285,7 @@ to {
 .etl-toolbox__elements {
     height: calc(100% - 46px);
     text-align: center;
+    position: relative;
 }
 .etl-toolbox__elements-element {
       height: 48px;
@@ -351,4 +352,33 @@ to {
 .etl-element.dragging .element-label {
     font-size: 13px;
     color: #FFFFFF;
+}
+.link-to-github {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin: 0 5%;
+  font-size: 12px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #2888e5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.link-to-github:hover {
+    background-color: rgba(40, 136, 229, 0.1);
+}
+.link-to-github:hover a {
+      opacity: .7;
+}
+.link-to-github svg {
+    background: transparent;
+    position: initial;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+.link-to-github a {
+    text-decoration: none;
+    color: #2888e5;
 }

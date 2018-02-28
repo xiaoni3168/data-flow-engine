@@ -25770,6 +25770,12 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 // import { etlPopElements } from './config/dataset.pop.config';
 
@@ -58218,31 +58224,46 @@ var render = function() {
     _c(
       "div",
       { staticClass: "etl-toolbox__elements" },
-      _vm._l(_vm.filterElements, function(element) {
-        return _c(
-          "div",
-          {
-            key: element.id,
-            staticClass: "etl-toolbox__elements-element",
-            attrs: {
-              "e-type": element.type,
-              "e-name": element.name,
-              "max-input": element.maxInput
-            }
-          },
-          [
-            _c("svg", { staticClass: "element-icon" }, [
-              _c("use", { attrs: { "xlink:href": element.icon } })
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "element-label" }, [
-              _vm._v(_vm._s(element.name))
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "element-cover" })
-          ]
-        )
-      })
+      [
+        _vm._l(_vm.filterElements, function(element) {
+          return _c(
+            "div",
+            {
+              key: element.id,
+              staticClass: "etl-toolbox__elements-element",
+              attrs: {
+                "e-type": element.type,
+                "e-name": element.name,
+                "max-input": element.maxInput
+              }
+            },
+            [
+              _c("svg", { staticClass: "element-icon" }, [
+                _c("use", { attrs: { "xlink:href": element.icon } })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "element-label" }, [
+                _vm._v(_vm._s(element.name))
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "element-cover" })
+            ]
+          )
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "link-to-github" }, [
+          _c("svg", [_c("use", { attrs: { "xlink:href": "#github" } })]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "https://github.com/xiaoni3168/data-flow-engine" }
+            },
+            [_vm._v("View Project on GitHub")]
+          )
+        ])
+      ],
+      2
     )
   ])
 }
