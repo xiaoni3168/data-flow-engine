@@ -1,4 +1,0 @@
-{
-    "presets": ["env", "stage-2"],
-    "plugins": ["transform-es2015-shorthand-properties", "transform-regenerator"]
-}
